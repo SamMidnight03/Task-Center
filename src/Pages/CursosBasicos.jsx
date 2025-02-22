@@ -1,7 +1,11 @@
 import React from 'react'
+import Virtuales from '../Components/Virtuales'
 
 export default function CursosBasicos() {
   return (
-    <div>CursosBasicos</div>
+    <section>
+      <Virtuales />
+
+    </section>
   )
 }

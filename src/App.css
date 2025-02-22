@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-*{
+
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -8,7 +9,7 @@
 
 /*Colores base*/
 
-:root{
+:root {
   --base: #ffff;
   --second: #DC0121;
   --letters: #000000;
@@ -16,13 +17,13 @@
 
 /*Estilos del body*/
 
-#root{
+#root {
   background-color: var(--base);
 }
 
 /*Header*/
 
-header nav{
+header nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -30,12 +31,12 @@ header nav{
   box-shadow: 0 2px 10px #37373787;
 }
 
-header img{
+header img {
   width: 100%;
   max-width: 120px;
 }
 
-header div{
+header div {
   width: 100%;
   max-width: 600px;
   display: flex;
@@ -43,12 +44,12 @@ header div{
   font-size: 1.1rem;
 }
 
-header .ruta{
+header .ruta {
   color: var(--letters);
   text-decoration: none;
 }
 
-header .ruta:hover{
+header .ruta:hover {
   color: var(--second);
   font-size: 1.3rem;
   text-decoration: underline;
@@ -57,41 +58,65 @@ header .ruta:hover{
 
 /*Primera seccion del Home, que es task center y a que se dedican*/
 
-main{
+main {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-main section{
+main section {
   padding: 20px 40px;
 }
 
-#InfoTaskCenter{
+#InfoTaskCenter {
   display: flex;
+  align-items: center;
+  flex-wrap: wrap;
   align-items: center;
 }
 
-#InfoTaskCenter img{
+#InfoTaskCenter img {
   width: 100%;
   max-width: 400px;
 }
 
+#InfoTaskCenter div {
+  flex-basis: 400px;
+  flex-grow: 1;
+}
+
 /*Videos con los testimonios de estudiantes o de la misma profe*/
 
-#testimonios{
+#testimonios {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 20px;
 }
 
 /*Footer*/
 
-footer{
+footer {
   border-top: 2px solid var(--letters);
   width: 100%;
   height: 200px;
   text-align: center;
   background-color: #e3e3e3e8;
+}
+
+/**/
+
+#CursosMedios {
+  color: var(--letters);
+}
+
+/*Estilos responsables*/
+
+@media screen and (max-width: 880px) {
+ 
+  #InfoTaskCenter div{
+  text-align: center;
+  }
+
 }

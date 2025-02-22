@@ -1,7 +1,12 @@
 import React from 'react'
+import Virtuales from '../Components/Virtuales'
 
 export default function CursosMedios() {
   return (
-    <div>CursosMedios</div>
+    <section id='CursosMedios'>
+      ⛔⛔⛔⛔
+      <Virtuales/>
+      
+    </section>
   )
 }
